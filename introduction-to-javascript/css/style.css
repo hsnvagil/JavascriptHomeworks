@@ -1,0 +1,102 @@
+body,
+html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #097518;
+}
+
+* {
+    font-size: 16px;
+    font-family: cursive;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    height: 40px;
+}
+
+ul li {
+    margin-right: 10px;
+    line-height: 38px;
+    width: 70px;
+    border: 1px solid black;
+    background-color: gainsboro;
+}
+
+ul li a {
+    line-height: 38px;
+    display: block;
+    text-align: center;
+}
+
+.main {
+    width: auto;
+}
+
+.selected,
+ul li:hover {
+    cursor: pointer;
+    background-color: #15b32b;
+    color: gainsboro;
+    border: 1px solid gainsboro;
+}
+
+section {
+    display: none;
+    padding: 40px;
+}
+
+section div {
+    margin-top: 5px;
+}
+
+section div span,
+section div a {
+    display: inline-block;
+    color: gainsboro;
+}
+
+.task-1 div span,
+.task-5 div span {
+    width: 80px;
+}
+
+.task-1 div input[type="button"] {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+}
+
+.task-2 div span {
+    width: 120px;
+}
+
+.task-3 div span {
+    width: 65px;
+}
+
+.task-4 div span {
+    width: 50px;
+}
+
+.task-5 div input[type="button"] {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+}
+
+
+.task-7 div span {
+    width: 100px;
+}
+
+.task-9 table tr td {
+    width: 40px;
+    text-align: center;
+    border: 1px solid gainsboro;
+}

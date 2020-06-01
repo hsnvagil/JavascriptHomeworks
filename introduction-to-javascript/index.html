@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="taskList">
+        <li><a onclick="openTask(0)">task 1</a</li> <li><a onclick="openTask(1)">task 2</a></li>
+        <li><a onclick="openTask(2)">task 3</a></li>
+        <li><a onclick="openTask(3)">task 4</a></li>
+        <li><a onclick="openTask(4)">task 5</a></li>
+        <li><a onclick="openTask(5)">task 6</a></li>
+        <li><a onclick="openTask(6)">task 7</a></li>
+        <li><a onclick="openTask(7)">task 8</a></li>
+        <li><a onclick="openTask(8)">task 9</a></li>
+        <li><a onclick="openTask(9)">task 10</a></li>
+    </ul>
+    <div id="container" class="main">
+        <section class="task-1">
+            <div>
+                <span>Numbers:</span>
+                <input type="text" name="" id="numbers" placeholder="e.g. (4,5,6,7)">
+                <input type="button" value="Calculate" onclick="solveTask1()">
+            </div>
+            <div>
+                <a>Result:</a>
+                <a id="task1Result">0</a>
+            </div>
+        </section>
+        <section class="task-2">
+            <div>
+                <span>First number:</span>
+                <input type="text" name="" id="firstNumber">
+            </div>
+            <div>
+                <span>Second number:</span>
+                <input type="text" name="" id="secondNumber">
+            </div>
+            <div>
+                <input type="button" value="Find GCD" onclick="solveTask2()">
+                <a>Result:</a>
+                <a id="task2Result">0</a>
+            </div>
+        </section>
+        <section class="task-3">
+            <div>
+                <span>Number:</span>
+                <input type="text" name="" id="number">
+                <input type="button" value="Get all divisors" onclick="solveTask3()">
+            </div>
+            <div>
+                <a>Result:</a>
+                <a id="task3Result">0</a>
+            </div>
+        </section>
+        <section class="task-4">
+            <div>
+                <span>Text:</span>
+                <input type="text" name="" id="text">
+                <input type="button" value="Find digits count" onclick="solveTask4()">
+            </div>
+            <div>
+                <a>Result:</a>
+                <a id="task4Result">0</a>
+            </div>
+        </section>
+        <section class="task-5">
+            <div>
+                <span>Numbers:</span>
+                <input type="text" name="" id="numbers1" placeholder="e.g. (5,0,-2,7)">
+                <input type="button" value="Display" onclick="solveTask5()">
+            </div>
+            <div>
+                <span>Positive:</span>
+                <a id="positive">0</a>
+            </div>
+            <div>
+                <span>Negative:</span>
+                <a id="negative">0</a>
+            </div>
+            <div>
+                <span>Zero:</span>
+                <a id="zero">0</a>
+            </div>
+            <div>
+                <span>Even:</span>
+                <a id="even">0</a>
+            </div>
+            <div>
+                <span>Odd:</span>
+                <a id="odd">0</a>
+            </div>
+        </section>
+        <section class="task-6">
+            <div>
+                <input type="button" value="Start" onclick="solveTask6()">
+            </div>
+        </section>
+        <section class="task-7">
+            <div>
+                <span>Digits: </span>
+                <input type="text" name="" id="digits">
+            </div>
+            <div>
+                <span>Shift count: </span>
+                <input type="text" name="" id="shiftCount">
+            </div>
+            <div>
+                <input type="button" value="Shift" onclick="solveTask7()">
+                <a>Result: </a>
+                <a id="task7Result"></a>
+            </div>
+        </section>
+        <section class="task-8">
+            <div>
+                <input type="button" value="Display day of the week" onclick="solveTask8()">
+            </div>
+        </section>
+        <section class="task-9">
+            <input type="button" value="Display Multable" onclick="solveTask9()">
+        </section>
+        <section>
+            <div>
+                <span>Guest number:</span>
+                <input type="text" name="" id="guestNumber">
+            </div>
+            <input type="button" value="Start" onclick="solveTask10()">
+        </section>
+    </div>
+
+</body>
+<script src="js/script.js">
+</script>
+
+</html>

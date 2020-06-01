@@ -1,0 +1,86 @@
+body,
+html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: maroon;
+}
+
+* {
+    font-size: 16px;
+    font-family: cursive;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    height: 40px;
+
+}
+
+ul li {
+    margin-right: 10px;
+    line-height: 38px;
+    width: 70px;
+    border: 1px solid black;
+    background-color: moccasin;
+}
+
+ul li a {
+    line-height: 38px;
+    display: block;
+    text-align: center;
+}
+
+.main {
+    width: auto;
+}
+
+.selected,
+ul li:hover {
+    cursor: pointer;
+    background-color: firebrick;
+    color: moccasin;
+    border: 1px solid moccasin;
+}
+
+section {
+    display: none;
+    padding: 40px;
+}
+
+section div {
+    margin-top: 5px;
+}
+
+section div span,
+section div a,
+section div h1 {
+    display: inline-block;
+    color: moccasin;
+}
+
+.task-1 span,
+.task-3 span {
+    width: 125px;
+}
+
+.task-4 span,
+.task-6 span,
+.task-7 span,
+.task-8 span,
+.task-10 span {
+    width: 65px;
+}
+
+.task-10 article {
+    display: flex;
+    flex-direction: row;
+}
+
+.task-10 article>div {
+    margin-right: 25px;
+}

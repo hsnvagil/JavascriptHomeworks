@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="taskList">
+        <li><a onclick="openTask(0)">task 1</a></li> 
+        <li><a onclick="openTask(1)">task 2</a></li>
+        <li><a onclick="openTask(2)">task 3</a></li>
+        <li><a onclick="openTask(3)">task 4</a></li>
+        <li><a onclick="openTask(4)">task 5</a></li>
+        <li><a onclick="openTask(5)">task 6</a></li>
+        <li><a onclick="openTask(6)">task 7</a></li>
+        <li><a onclick="openTask(7)">task 8</a></li>
+        <li><a onclick="openTask(8)">task 9</a></li>
+        <li><a onclick="openTask(9)">task 10</a></li>
+    </ul>
+    <div id="container" class="main">
+
+        <section id="task1" class="task-1">
+            <div>
+                <span>First number:</span>
+                <input type="text" name="" id="firstNumber">
+            </div>
+            <div>
+                <span>Second number:</span>
+                <input type="text" name="" id="secondNumber">
+            </div>
+            <div>
+                <input type="button" value="Solve" onclick="solveTask1()">
+                <span style="width: auto;">Result:</span>
+                <span id="task1Result"></span>
+            </div>
+        </section>
+
+        <section class="task-2">
+            <div>
+                <span>Number:</span>
+                <input type="text" name="" id="number">
+            </div>
+            <div>
+                <input type="button" value="Calculate factorial" onclick="solveTask2()">
+                <span style="width: auto;">Result:</span>
+                <span id="task2Result"></span>
+            </div>
+        </section>
+
+        <section class="task-3">
+            <div>
+                <span>First number:</span>
+                <input type="text" name="" id="firstNum">
+            </div>
+            <div>
+                <span>Second number:</span>
+                <input type="text" name="" id="secondNum">
+            </div>
+            <div>
+                <span>Third number:</span>
+                <input type="text" name="" id="thirdNum">
+            </div>
+            <div>
+                <input type="button" value="Convert" onclick="solveTask3()">
+                <a>Result:</a>
+                <span id="task3Result"></span>
+            </div>
+        </section>
+
+        <section class="task-4">
+            <div>
+                <span>Length:</span>
+                <input type="text" name="" id="length">
+            </div>
+            <div>
+                <span>Width:</span>
+                <input type="text" name="" id="width">
+            </div>
+            <div>
+                <input type="button" value="Calculate" onclick="solveTask4()">
+                <a>Area:</a>
+                <a id="task4Result"></a>
+            </div>
+        </section>
+
+        <section class="task-5">
+            <div>
+                <span>Number:</span>
+                <input type="text" name="" id="numbrer">
+            </div>
+            <div>
+                <input type="button" value="Solve" onclick="solveTask5()">
+                <a id="task5Result"></a>
+            </div>
+        </section>
+
+        <section class="task-6">
+            <div>
+                <span>Start:</span>
+                <input type="text" name="" id="startNum">
+            </div>
+            <div>
+                <span>End:</span>
+                <input type="text" name="" id="endNum">
+            </div>
+            <div>
+                <input type="button" value="Solve" onclick="solveTask6()">
+                <a>Result:</a>
+                <a id="task6Result"></a>
+            </div>
+        </section>
+
+        <section class="task-7">
+            <div>
+                <span>Hour:</span>
+                <input type="text" name="" id="hour">
+            </div>
+            <div>
+                <span>Minutes:</span>
+                <input type="text" name="" id="minute">
+            </div>
+            <div>
+                <span>Seconds:</span>
+                <input type="text" name="" id="second">
+            </div>
+            <div>
+                <input type="button" value="Convert" onclick="solveTask7()">
+                <a>Result:</a>
+                <a id="task7Result"></a>
+            </div>
+        </section>
+
+        <section class="task-8">
+            <div>
+                <span>Hour:</span>
+                <input type="text" name="" id="hours">
+            </div>
+            <div>
+                <span>Minutes:</span>
+                <input type="text" name="" id="minutes">
+            </div>
+            <div>
+                <span>Seconds:</span>
+                <input type="text" name="" id="seconds">
+            </div>
+            <div>
+                <input type="button" value="Convert" onclick="solveTask8()">
+                <a>Result:</a>
+                <a id="task8Result"></a>
+            </div>
+        </section>
+
+        <section class="task-9">
+            <div>
+                <span>Seconds:</span>
+                <input type="text" name="" id="Seconds">
+            </div>
+            <div>
+                <input type="button" value="Convert" onclick="solveTask9()">
+                <a>Result:</a>
+                <a id="task9Result"></a>
+            </div>
+        </section>
+
+        <section class="task-10">
+            <article>
+                <div>
+                    <h1>Start time</h1>
+                    <div>
+                        <span>Hours:</span>
+                        <input type="text" name="" id="sHours">
+                    </div>
+                    <div>
+                        <span>Minutes:</span>
+                        <input type="text" name="" id="sMinutes">
+                    </div>
+                    <div>
+                        <span>Seconds:</span>
+                        <input type="text" name="" id="sSeconds">
+                    </div>
+                </div>
+
+                <div>
+                    <h1>End time</h1>
+                    <div>
+                        <span>Hours:</span>
+                        <input type="text" name="" id="eHours">
+                    </div>
+                    <div>
+                        <span>Minutes:</span>
+                        <input type="text" name="" id="eMinutes">
+                    </div>
+                    <div>
+                        <span>Seconds:</span>
+                        <input type="text" name="" id="eSeconds">
+                    </div>
+                </div>
+
+            </article>
+            <div>
+                <input type="button" value="Calculate duration" onclick="solveTask10()">
+                <a>Result:</a>
+                <a id="task10Result"></a>
+            </div>
+        </section>
+
+    </div>
+</body>
+<script src="js/script.js"></script>
+
+</html>
