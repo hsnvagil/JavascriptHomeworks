@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+          href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="window">
+    <div class="system-bar">
+        <button onclick="maximizeMinimizeWindow()">
+            <span id="minMaxCharacter">&#128471;&#xFE0E;</span>
+        </button>
+    </div>
+    <div class="client-rect">
+        <div class="side-menu">
+            <div class="add-person">
+                <input type="text" name="" id="newPersonName" placeholder="Add new person">
+                <button id="addPerson" onclick="addPerson()">
+                    <i class="ms-Icon ms-font-xl ms-Icon--AddFriend"></i>
+                </button>
+            </div>
+            <div id="personPanel" class="person-panel">
+
+            </div>
+        </div>
+        <div class="chat">
+            <header>
+                <span id="personName">New chat</span>
+            </header>
+            <div class="messages">
+
+            </div>
+            <div class="input-panel">
+                <textarea disabled name="" id="input" placeholder="Write a message..."></textarea>
+                <button disabled class="location-btn" onclick="getLocation()" >
+                    <i class="ms-Icon ms-font-xl ms-Icon--Location"></i>
+                </button>
+                <button disabled id="sendButton" onclick="sendMessage()">
+                    <img style="max-width: 100%" src="img/send_message_telegram_paperplane_plane-512.png" alt="send">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/script.js"></script>
+</html>
