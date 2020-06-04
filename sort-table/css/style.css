@@ -1,0 +1,17 @@
+table {
+    border-collapse: collapse;
+    background-color: #FBF2E9;
+    margin: 50px auto;
+}
+
+table, th, td {
+    border: 2px solid #8A8A8A;
+}
+
+th, tr, td {
+    padding: 15px;
+}
+
+th{
+    cursor: default;
+}

@@ -1,0 +1,20 @@
+.container{
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#linkList li{
+    padding: 5px;
+}
+
+#linkList li a{
+    text-decoration: none;
+    color: #551A8B  ;
+    cursor: pointer;
+    padding: 0.5px;
+    font-size: 15px;
+}
