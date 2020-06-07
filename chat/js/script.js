@@ -156,6 +156,7 @@ function sendMessage() {
                                            </span></div>`;
         type = "receive";
     }
+    messages.scrollTop = messages.scrollHeight;
     const panel = document.getElementById("personPanel");
     const grids = panel.getElementsByClassName("person-grid active");
     let chatPersonName = grids[0].getElementsByTagName("span")[0].textContent;
